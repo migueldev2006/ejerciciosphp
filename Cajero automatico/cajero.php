@@ -23,6 +23,7 @@ if ($opcion == 1){
     }
 }
     ConsultarSaldo();
+    break;
 }
 
 elseif ($opcion == 2){
@@ -42,6 +43,7 @@ elseif ($opcion == 2){
     }
 }
     ConsignarDinero();
+    break;
 }
 
 elseif ($opcion == 3){
@@ -49,7 +51,7 @@ elseif ($opcion == 3){
         $clave = 2007;
         $cuenta = readline("Ingrese su numero de cuenta: ");
         $clave = readline("Digite la contrasena: ");
-        if($clave == true){
+        if($clave == $clave){
         $dinero = readline("Ingrese a cantidad de dinero a retirar: ");
         echo "Retiro exitoso "." Estimado usuario usted con numero de cuenta $cuenta, Acaba de hacer un retiro de $ $dinero  pesos."."\n";
         }
@@ -59,6 +61,7 @@ elseif ($opcion == 3){
         }
     }
     RetirarDinero();
+    break;
 }
 else{
     if($opcion == 4){
